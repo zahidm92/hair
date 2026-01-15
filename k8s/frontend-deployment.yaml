@@ -18,6 +18,9 @@ spec:
         imagePullPolicy: Never
         ports:
         - containerPort: 5173
+        env:
+        - name: VITE_API_URL
+          value: "http://localhost:5000/api"
 ---
 apiVersion: v1
 kind: Service
